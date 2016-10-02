@@ -45,14 +45,14 @@ class LoginHandler(Handler):
   def get(self):
     self.render("login.html")
 
-class SignupHandler(Signup):
-	def get(self)
+class SignupHandler(Handler):
+	def get(self):
 		self.render("signup.html")
 
 app = webapp2.WSGIApplication([
   ('/', MainHandler),
-  ('/login', LoginHandler)
-  ('/signup.html', SignupHandler)
+  ('/login', LoginHandler),
+  ('/signup', SignupHandler)
 ])
 
 
