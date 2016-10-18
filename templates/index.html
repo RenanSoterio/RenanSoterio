@@ -17,7 +17,13 @@
 
   <body>
 
-    Esse vai ser nossa página principal, por enquanto ainda não temos conteúdo =/
+    <img src="static/construcao.png" alt="Pagina em constução" style="width:100%;height:100%">
+
+    {%if logado == True%}
+    Usuário está logado!
+    {% else%}
+    Usuário não está logado!
+    {%endif%}
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.2.1/material.min.js"></script>
   </body>
