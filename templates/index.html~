@@ -10,7 +10,7 @@
 
     <!-- CSS -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.blue_grey-purple.min.css" /> 
+    <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.2.1/material.deep_purple-deep_orange.min.css">
     <link rel="stylesheet" href="static/styles/index.css">
 
   </head>
@@ -22,27 +22,25 @@
   <header class="mdl-layout__header">
     <div class="mdl-layout__header-row">
       <!-- Title -->
-      <span class="mdl-layout-title">Renan Blog!</span>
+      <span class="mdl-layout-title">Pagina Inicial</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
       <!-- Navigation -->
       <nav class="mdl-navigation">
 	{% if logado == True %}
 	<a class="mdl-navigation__link" href="/Postar">Postar</a>
-        <a class="mdl-navigation__link" href="/login">Sair</a>
+        <a class="mdl-navigation__link" href="">Sair</a>
 	{% else %}
         <a class="mdl-navigation__link" href="/signup">Cadastrar</a>
         <a class="mdl-navigation__link" href="/login">Logar</a>
 	{% endif %}
       </nav>
-
-
     </div>
   </header>
 
 <style>
 .mdl-card__title {
-  background-color: grey;
+  background-color: orange;
   	
 }
 </style>
@@ -68,8 +66,6 @@
   margin: 0 15% 0 15%;
   width: 70%;
 }
-
-
 </style>
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.2.1/material.min.js"></script>

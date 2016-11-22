@@ -94,7 +94,7 @@ class Handler(webapp2.RequestHandler):
 class MainHandler(Handler):
   def get(self):
     user_id = self.request.cookies.get("user_id")
-    posts = Postar.query().order(-Postar.created_at).fetch()
+    posts = Postar.query().fetch()
     if user_id and check_secure_val(user_id):
       self.render("index.html", logado = True, posts = posts)
     else:
